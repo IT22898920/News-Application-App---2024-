@@ -1,0 +1,72 @@
+<!-- dialog_input_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- News Title Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News Title"
+        android:textStyle="bold" />
+
+    <!-- Normal Input Type -->
+    <EditText
+        android:id="@+id/normalInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Enter News Title"
+        android:inputType="text"
+        android:padding="10dp"
+        />
+
+    <!-- Category Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Category"
+        android:textStyle="bold" />
+
+    <!-- Option Input Type (Spinner) -->
+    <Spinner
+        android:id="@+id/optionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:entries="@array/Cetogary" />
+
+    <!-- News Description Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="News Description"
+        android:textStyle="bold" />
+
+    <!-- Text Area -->
+    <EditText
+        android:id="@+id/textAreaInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="top"
+        android:hint="Enter News Description"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:padding="10dp"
+        />
+
+    <!-- Upload Image Button -->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#663deb"
+        android:text="Upload"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_surface"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/mainlayout">
+
+    <!-- Header with App Name -->
+
+
+    <!-- Search Bar -->
+
+    <!-- News Categories -->
+
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/newsApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News.69"
+            android:textColor="#ff0000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="250dp"
+            app:srcCompat="@drawable/border_color_24" />
+
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="382dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="#315E5A5A"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="Search here..." >
+
+    </androidx.appcompat.widget.SearchView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnWorld"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#1C1F20"
+            android:backgroundTint="#131313"
+            android:text="World" />
+
+        <Button
+            android:id="@+id/btnBusiness"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:text="Business" />
+
+        <Button
+            android:id="@+id/btnTech"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFC107"
+            android:text="Tech" />
+
+        <Button
+            android:id="@+id/btnSports"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#E91E63"
+            android:text="Sports"
+
+            />
+    </LinearLayout>
+
+    <!-- News Feed (Using a RecyclerView for better performance and flexibility) -->
+
+    <!-- Footer -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvToDoList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="@android:color/background_light" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:padding="14dp">
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:text="Add New News"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#E12626"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/mike" />
+    </LinearLayout>
+
+</LinearLayout>
+

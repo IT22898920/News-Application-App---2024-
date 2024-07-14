@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/todo_row_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+    <!-- News View Item -->
+    <LinearLayout
+        android:id="@+id/newsItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- News Thumbnail -->
+
+        <!-- News Text Layout -->
+        <ImageView
+            android:id="@+id/newsThumbnail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mike" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- News Title -->
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="News Title Here"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- News Description -->
+
+            <TextView
+                android:id="@+id/newsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Short news description here..."
+                android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/bookmarkIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="100dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:contentDescription="Bookmark Icon"
+                    android:focusable="true"
+                    android:padding="2dp"
+                    android:src="@drawable/bookmark_24" />
+
+                <ImageView
+                    android:id="@+id/DeleteIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:contentDescription="Delete Icon"
+                    android:focusable="true"
+                    android:padding="3dp"
+                    android:src="@drawable/delete_24" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Bookmark Icon -->
+    </LinearLayout>
+    <!-- End of News View Item -->
+
+    <!-- Button to Hide News Item -->
+</LinearLayout>
+</LinearLayout>
